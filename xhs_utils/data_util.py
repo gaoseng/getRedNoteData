@@ -190,6 +190,7 @@ def save_to_xlsx(datas, file_path, type='note'):
         ws.append(list(data.values()))
     wb.save(file_path)
     logger.info(f'数据保存至 {file_path}')
+    logger.info(data)
 
 def download_media(path, name, url, type):
     if type == 'image':

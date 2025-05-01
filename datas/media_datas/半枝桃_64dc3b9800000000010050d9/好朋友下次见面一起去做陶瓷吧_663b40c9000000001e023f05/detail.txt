@@ -1,5 +1,5 @@
 笔记id: 663b40c9000000001e023f05
-笔记url: https://www.xiaohongshu.com/explore/663b40c9000000001e023f05?xsec_token=AB4IeNurF0eRCB8znUVFqHPtzD4mxrB0pbKxdjzAY9-_o=
+笔记url: https://www.xiaohongshu.com/explore/663b40c9000000001e023f05?xsec_token=AB4IeNurF0eRCB8znUVFqHPhOH6jpm3irRSF-Dp_e718w=
 笔记类型: 图集
 用户id: 64dc3b9800000000010050d9
 用户主页url: https://www.xiaohongshu.com/user/profile/64dc3b9800000000010050d9
@@ -9,11 +9,11 @@
 描述: #陶艺体验[话题]# #陶艺diy[话题]# #陶艺[话题]# #手捏杯子[话题]# #手作diy[话题]# #手工艺[话题]# #手作[话题]# #手艺人的日常[话题]# #手工DIY[话题]# #手工礼物推荐[话题]# #每日分享[话题]##好朋友是生活的解药[话题]# #我的日常[话题]#
 点赞数量: 7.5万
 收藏数量: 3.3万
-评论数量: 2242
+评论数量: 2243
 分享数量: 1.9万
 视频封面url: None
 视频地址url: None
-图片地址url列表: ['http://sns-webpic-qc.xhscdn.com/202504302109/7f3b70d62f7da6a35843b0fd39e9d9f2/1040g008312hhssb6na505p6s7ec08k6pk8bdjr0!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202504302109/0d1063f9c59ef9d54e92db78550edfaf/1040g008312hhssb6na6g5p6s7ec08k6p0j1abj0!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202504302109/df62f770afd18039027e67361166df7a/1040g008312hhssb6na4g5p6s7ec08k6p33s9d5g!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202504302109/b9232abbfb10f3949a1341ab692a4ca7/1040g008312hhssb6na405p6s7ec08k6pjoj6s48!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202504302109/3823c1915fbbf5de8861e95f9f8d71bb/1040g008312hhssb6na2g5p6s7ec08k6pf5eat08!nd_dft_wlteh_webp_3']
+图片地址url列表: ['http://sns-webpic-qc.xhscdn.com/202505012057/caf27ac7804eca609704fcc2237aa5d3/1040g008312hhssb6na505p6s7ec08k6pk8bdjr0!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202505012057/81836421a5f32988fbc670a399bb8045/1040g008312hhssb6na6g5p6s7ec08k6p0j1abj0!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202505012057/7e924ee01f27dc0921df45bfcb875a01/1040g008312hhssb6na4g5p6s7ec08k6p33s9d5g!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202505012057/98666eb581037f58c19d8d13c4b648ec/1040g008312hhssb6na405p6s7ec08k6pjoj6s48!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202505012057/e1b81076a5ba1037aeb1fc502a268b65/1040g008312hhssb6na2g5p6s7ec08k6pf5eat08!nd_dft_wlteh_webp_3']
 标签: ['陶艺体验', '陶艺diy', '陶艺', '手捏杯子', '手作diy', '手工艺', '手作', '手艺人的日常', '手工DIY', '手工礼物推荐', '每日分享', '好朋友是生活的解药', '我的日常']
 上传时间: 2024-05-08 17:07:21
 ip归属地: 未知

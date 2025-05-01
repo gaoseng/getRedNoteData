@@ -1,5 +1,5 @@
 笔记id: 67529c2b000000000203a427
-笔记url: https://www.xiaohongshu.com/explore/67529c2b000000000203a427?xsec_token=ABc4yiUYUyUeyrKajZ0X1WeI5WFFzyyv37GM8CQ3ghm6Q=
+笔记url: https://www.xiaohongshu.com/explore/67529c2b000000000203a427?xsec_token=ABc4yiUYUyUeyrKajZ0X1WeHQuMnrKTbqs9g4eghhhgfY=
 笔记类型: 图集
 用户id: 61a97758000000001000bb5a
 用户主页url: https://www.xiaohongshu.com/user/profile/61a97758000000001000bb5a
@@ -7,13 +7,13 @@
 头像url: https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo318lgfncik4005od9etc41eqqkmphcl0
 标题: 玩泥巴日常 | 陶艺初体验✨
 描述: #陶艺diy[话题]# #手作陶瓷[话题]# #陶瓷[话题]# #陶艺体验[话题]# #陶艺[话题]# #手绘陶瓷[话题]# #手捏杯子[话题]# #陶瓷艺术[话题]# #日常拍照[话题]# #日常生活里的快乐瞬间[话题]#
-点赞数量: 494
-收藏数量: 208
+点赞数量: 501
+收藏数量: 210
 评论数量: 10
 分享数量: 57
 视频封面url: None
 视频地址url: None
-图片地址url列表: ['http://sns-webpic-qc.xhscdn.com/202504302109/a72884c7ff17ce998c7ec90bffa2d3f2/1040g00831b2bppgana005od9etc41eqqkgljlf8!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202504302109/f4c13bbf1de16387f9f04658627c52e1/1040g00831b2bppgana0g5od9etc41eqqu68ok8g!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202504302109/77a25c23aaa6947a749d433e55480e20/1040g00831b2bppgana105od9etc41eqq436imjg!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202504302109/314f7f917be863a6ef0632d9aafa1217/1040g00831b2bppgana1g5od9etc41eqqt9kb510!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202504302109/bdd31ccfb82c33472795c37ee287171c/1040g00831b2bppgana205od9etc41eqqjemr5k0!nd_dft_wlteh_webp_3']
+图片地址url列表: ['http://sns-webpic-qc.xhscdn.com/202505012057/bbebcac02edbd49d2714732d8087e080/1040g00831b2bppgana005od9etc41eqqkgljlf8!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202505012057/16d42ca357286c593c733991e8c68d10/1040g00831b2bppgana0g5od9etc41eqqu68ok8g!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202505012057/24dc38445de0ef0b4b4c07cc19b84f00/1040g00831b2bppgana105od9etc41eqq436imjg!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202505012057/85d59a29b0b18dfb496f9332e2dab8c4/1040g00831b2bppgana1g5od9etc41eqqt9kb510!nd_dft_wlteh_webp_3', 'http://sns-webpic-qc.xhscdn.com/202505012057/5cdb50ed0151ea83d1b44ef761f05c36/1040g00831b2bppgana205od9etc41eqqjemr5k0!nd_dft_wlteh_webp_3']
 标签: ['陶艺diy', '手作陶瓷', '陶瓷', '陶艺体验', '陶艺', '手绘陶瓷', '手捏杯子', '陶瓷艺术', '日常拍照', '日常生活里的快乐瞬间']
 上传时间: 2024-12-06 14:39:39
 ip归属地: 未知

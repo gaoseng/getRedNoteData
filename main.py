@@ -127,7 +127,7 @@ if __name__ == '__main__':
 
     # # 3 爬关键字
     query = "陶瓷"
-    query_num = 10
+    query_num = 5
     sort = "general"
     note_type = 0
     data_spider.spider_some_search_note(query, query_num, cookies_str, base_path, 'all', sort, note_type)
