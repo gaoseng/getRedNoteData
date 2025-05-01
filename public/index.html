@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>脚本执行器</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Element UI 样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <style>
+    h3 {
+      color: rgb(211, 103, 103);
+    }
+    .el-divider {
+      background-color: rgb(211, 103, 103);
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" style="padding: 40px;">
+    <el-container>
+      <el-header>
+        <h2 style="text-align: center;">小红书数据抓取软件</h2>
+      </el-header>
+
+      <el-main>
+         <!-- 新增输入框和按钮 -->
+         <el-divider style=" border-top: 1px solid rgb(211, 103, 103);">
+          <h3>修改 COOKIES</h3>
+         </el-divider>
+         <div >
+          
+          <el-input
+          type="textarea"
+          :rows="2"
+            v-model="cookiesValue" 
+            placeholder="请输入新的 COOKIES" 
+            style="min-width: 60%;margin-bottom: 10px;"
+          ></el-input>
+          <el-button type="success" @click="updateCookies">更新 COOKIES</el-button>
+         </div>
+         <el-divider style="color: rgb(211, 103, 103);"><h3>数据处理</h3></el-divider>
+        <el-button type="primary" @click="runAll" :loading="loading">抓取小红书数据</el-button>
+        <el-button type="success" :loading="loading" 
+        :disabled="loading || !isReady"  @click="downloadZip">导出数据</el-button>
+
+
+        <el-divider style="color: rgb(211, 103, 103);"><h3>输出结果</h3></el-divider>
+
+        <el-input
+          type="textarea"
+          :rows="10"
+          v-model="output"
+          placeholder="执行结果将在这里显示"
+          readonly
+        ></el-input>
+      </el-main>
+    </el-container>
+  </div>
+
+  <!-- Vue 和 Element UI CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="main.js">
+
+  </script>
+</body>
+</html>
