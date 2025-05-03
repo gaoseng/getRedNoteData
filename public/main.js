@@ -4,8 +4,9 @@ new Vue({
     output: '',
     loading: false,
     isReady: false,    // 控制“导出数据”按钮是否启用
-    cookiesValue: ''  // 用来绑定输入框的内容
-
+    cookiesValue: localStorage.getItem('cookies') || '',  // 用来绑定输入框的内容
+    keyword: localStorage.getItem('keyword') || '',
+    queryNum: localStorage.getItem('queryNum') || '',
   },
   methods: {
     runAll() {
@@ -15,10 +16,14 @@ new Vue({
         .then(res => res.text())
         .then(text => {
           this.isReady = true;   // 设置导出按钮可用
-          this.output = '成功抓取小红书数据';
+          // this.output = '成功抓取小红书数据';
+          this.$message.success('成功抓取小红书数据');
+          
         })
         .catch(err => {
-          this.output = '执行出错: ' + err.message;
+          const msg = '执行出错: ' + err.message;
+          this.$message.success(msg);
+          
         })
         .finally(() => {
           this.loading = false;
@@ -35,7 +40,7 @@ new Vue({
     // 更新 COOKIES
     updateCookies() {
       if (!this.cookiesValue) {
-        this.output = '请输入有效的 COOKIES 值';
+        this.$message.error('Cookies 不能为空');
         return;
       }
 
@@ -50,10 +55,41 @@ new Vue({
       })
       .then(res => res.text())
       .then(result => {
+        localStorage.setItem('cookies', this.cookies)
         this.output = result;  // 显示成功消息
       })
       .catch(error => {
-        this.output = '更新 COOKIES 出错: ' + error;
+        const msg = '更新 COOKIES 出错: ' + error;
+        this.$message.error(msg);
+      });
+    },
+    updateQuery() {
+      if (!this.queryNum || !this.keyword) {
+        this.$message.error('关键字或者数量不能为空');
+        return;
+      }
+
+      fetch('/update-query', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          keyword: this.keyword,
+          queryNum: this.queryNum,
+        })
+      })
+      .then(res => res.text())
+      .then(result => {
+        // this.output = result;  // 显示成功消息
+        localStorage.setItem('keyword', this.keyword);
+        localStorage.setItem('queryNum', this.queryNum)
+        this.$message.success(result);
+      })
+      .catch(error => {
+        // this.output = '更新 COOKIES 出错: ' + error;
+        const msg = '更新 COOKIES 出错: ' + error;
+        this.$message.error(msg);
       });
     }
     

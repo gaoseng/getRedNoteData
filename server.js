@@ -101,6 +101,33 @@ app.post('/update-cookies', (req, res) => {
   });
 });
 
+app.post('/update-query', (req, res) => {
+  console.log('------',req.body)
+  const { keyword, queryNum } = req.body;
+
+  // 获取文件路径
+  const envPath = path.resolve(__dirname, 'main.py');
+
+  // 读取现有的文件
+  fs.readFile(envPath, 'utf-8', (err, data) => {
+    if (err) {
+      return res.status(500).send('读取 main.py 文件失败');
+    }
+
+    const updatedData = data
+      .replace(/query\s*=\s*['"].*?['"]/, `query = "${keyword}"`)
+      .replace(/query_num\s*=\s*(['"]?\d+['"]?)/, `query_num = ${Number(queryNum)}`);
+
+    // 将更新后的内容写回文件
+    fs.writeFile(envPath, updatedData, 'utf-8', (err) => {
+      if (err) {
+        return res.status(500).send('更新 关键字和数量 文件失败');
+      }
+      res.send('更新成功');
+    });
+  });
+});
+
 // 启动服务器
 app.listen(3000, () => {
   console.log('✅ Server running at http://localhost:3000');

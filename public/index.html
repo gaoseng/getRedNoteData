@@ -39,13 +39,31 @@
           ></el-input>
           <el-button type="success" @click="updateCookies">更新 COOKIES</el-button>
          </div>
+         <el-divider style=" border-top: 1px solid rgb(211, 103, 103);">
+          <h3>输入关键字和数量</h3>
+         </el-divider>
+         <div style>
+          
+          <el-input
+            v-model="keyword" 
+            placeholder="输入关键字" 
+            style="width: 300px;"
+          ></el-input>
+          <el-input
+          type="number"
+            v-model="queryNum" 
+            placeholder="输入抓取的数量" 
+            style="width: 150px; margin: 0 20px;"
+          ></el-input>
+          <el-button type="success" @click="updateQuery">提交</el-button>
+         </div>
          <el-divider style="color: rgb(211, 103, 103);"><h3>数据处理</h3></el-divider>
         <el-button type="primary" @click="runAll" :loading="loading">抓取小红书数据</el-button>
         <el-button type="success" :loading="loading" 
-        :disabled="loading || !isReady"  @click="downloadZip">导出数据</el-button>
+        :disabled="loading"  @click="downloadZip">导出数据</el-button>
 
 
-        <el-divider style="color: rgb(211, 103, 103);"><h3>输出结果</h3></el-divider>
+        <!-- <el-divider style="color: rgb(211, 103, 103);"><h3>输出结果</h3></el-divider>
 
         <el-input
           type="textarea"
@@ -53,7 +71,7 @@
           v-model="output"
           placeholder="执行结果将在这里显示"
           readonly
-        ></el-input>
+        ></el-input> -->
       </el-main>
     </el-container>
   </div>
