@@ -57,6 +57,7 @@ new Vue({
       .then(result => {
         localStorage.setItem('cookies', this.cookies)
         this.output = result;  // 显示成功消息
+        this.$message.success(msg);
       })
       .catch(error => {
         const msg = '更新 COOKIES 出错: ' + error;
