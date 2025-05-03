@@ -28,7 +28,8 @@ app.get('/run-node', (req, res) => {
 
 // 路由 3：依次执行 Python + Node 脚本
 app.get('/run-all', (req, res) => {
-  exec('python3 main.py', (pyErr, pyOut, pyStderr) => {
+  const scriptPath = path.join(__dirname, 'main.py');
+  exec(`python3 ${scriptPath}`, (pyErr, pyOut, pyStderr) => {
     if (pyErr) return res.status(500).send(`[Python Error]\n${pyStderr}`);
     exec('node index.js', (nodeErr, nodeOut, nodeStderr) => {
       if (nodeErr) return res.status(500).send(`[Node Error]\n${nodeStderr}`);
