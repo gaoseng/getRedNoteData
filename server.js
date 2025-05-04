@@ -3,13 +3,12 @@ const { exec } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 const archiver = require('archiver');
-
+const {cleanSubdirectories} = require('./utils/cleanDataDir');
 const app = express();
 
 // 静态资源目录（Vue + Element UI 前端页面）
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
-
 // 路由 1：执行 Python 脚本
 app.get('/run-python', (req, res) => {
   exec('python3 main.py', (err, stdout, stderr) => {
@@ -28,6 +27,8 @@ app.get('/run-node', (req, res) => {
 
 // 路由 3：依次执行 Python + Node 脚本
 app.get('/run-all', (req, res) => {
+  const dataDir = path.resolve(__dirname, 'datas');
+cleanSubdirectories(dataDir);
   const scriptPath = path.join(__dirname, 'main.py');
   exec(`python3 ${scriptPath}`, (pyErr, pyOut, pyStderr) => {
     if (pyErr) return res.status(500).send(`[Python Error]\n${pyStderr}`);
