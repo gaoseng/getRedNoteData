@@ -98,8 +98,8 @@ app.post('/update-cookies', (req, res) => {
 
 app.post('/update-query', (req, res) => {
   console.log('------',req.body)
-  const { keyword, queryNum } = req.body;
-
+  const { keyword, queryNum,sort } = req.body;
+  console.log(keyword, queryNum,sort);
   // 获取文件路径
   const envPath = path.resolve(__dirname, 'main.py');
 
@@ -111,8 +111,8 @@ app.post('/update-query', (req, res) => {
 
     const updatedData = data
       .replace(/query\s*=\s*['"].*?['"]/, `query = "${keyword}"`)
-      .replace(/query_num\s*=\s*(['"]?\d+['"]?)/, `query_num = ${Number(queryNum)}`);
-
+      .replace(/query_num\s*=\s*(['"]?\d+['"]?)/, `query_num = ${Number(queryNum)}`)
+      .replace(/sort\s*=\s*['"].*?['"]/g, `sort = "${sort}"`)
     // 将更新后的内容写回文件
     fs.writeFile(envPath, updatedData, 'utf-8', (err) => {
       if (err) {

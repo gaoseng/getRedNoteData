@@ -77,7 +77,7 @@ class Data_Spider():
         logger.info(f'爬取用户所有视频 {user_url}: {success}, msg: {msg}')
         return note_list, success, msg
 
-    def spider_some_search_note(self, query: str, require_num: int, cookies_str: str, base_path: dict, save_choice: str, sort="general", note_type=0,  excel_name: str = '', proxies=None):
+    def spider_some_search_note(self, query: str, require_num: int, cookies_str: str, base_path: dict, save_choice: str, sort = "general", note_type=0,  excel_name: str = '', proxies=None):
         """
             指定数量搜索笔记，设置排序方式和笔记类型和笔记数量
             :param query 搜索的关键词
@@ -126,8 +126,8 @@ if __name__ == '__main__':
     # data_spider.spider_user_all_note(user_url, cookies_str, base_path, 'all')
 
     # # 3 爬关键字
-    query = "123"
-    query_num = 1
-    sort = "popularity_descending"
+    query = "晋安湖"
+    query_num = 5
+    sort = "general"
     note_type = 0
     data_spider.spider_some_search_note(query, query_num, cookies_str, base_path, 'all', sort, note_type)
