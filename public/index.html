@@ -65,11 +65,11 @@
           </el-select>
           <!-- <el-button type="success" @click="updateQuery">提交</el-button> -->
          </div>
-         <el-divider style="color: rgb(211, 103, 103);"><h3>数据处理</h3></el-divider>
+         <el-divider style="color: rgb(211, 103, 103);"><h3>热点处理</h3></el-divider>
         <div style="display: flex; justify-content: center; margin-top: 50px;">
-          <el-button type="primary" @click="updateQuery" :loading="loading">抓取小红书数据</el-button>
+          <el-button type="primary" @click="updateQuery" :loading="loading">抓取热点</el-button>
         <el-button type="success" :loading="loading" 
-        :disabled="loading"  @click="downloadZip">导出数据</el-button>
+        :disabled="loading"  @click="downloadZip">下载热点</el-button>
         </div>
 
 
