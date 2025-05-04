@@ -30,12 +30,14 @@ new Vue({
         });
     },
     downloadZip() {
+      this.loading = true;
       const a = document.createElement('a');
-      a.href = '/download-jsons';
+      a.href = '/download-datas';
       a.download = 'data.zip';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
+      setTimeout(() => {this.loading = false}, 3000);
     },
     // 更新 COOKIES
     updateCookies() {

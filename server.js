@@ -41,17 +41,16 @@ cleanSubdirectories(dataDir);
 });
 
 // 路由 4：下载 excel_datas 目录下所有 .json 文件为 zip 包
-app.get('/download-jsons', (req, res) => {
-  const dirPath = path.join(__dirname, 'datas/excel_datas');
+app.get('/download-datas', (req, res) => {
+  const dirPath = path.join(__dirname, 'datas/excel_datas'); // 下载整个 datas 目录
   const zipName = 'data.zip';
   const zipPath = path.join(__dirname, zipName);
-
+  console.log('ZIP file path:', zipPath);
   // 创建压缩文件流
   const output = fs.createWriteStream(zipPath);
   const archive = archiver('zip', { zlib: { level: 9 } });
 
   output.on('close', () => {
-    // 确保所有文件都压缩完毕后再进行下载
     res.download(zipPath, zipName, (err) => {
       if (err) console.error('Download error:', err);
       fs.unlinkSync(zipPath); // 下载完成后删除临时 zip 文件
@@ -65,15 +64,9 @@ app.get('/download-jsons', (req, res) => {
 
   archive.pipe(output);
 
-  // 读取并添加 .json 文件
-  fs.readdirSync(dirPath).forEach((file) => {
-    if (file.endsWith('.json')) {
-      const filePath = path.join(dirPath, file);
-      archive.file(filePath, { name: file });
-    }
-  });
+  // 将整个 datas 目录添加进压缩包（包括子文件夹）
+  archive.directory(dirPath, false); // 第二个参数 false 表示不嵌套 datas 文件夹本身，只压它的内容
 
-  // 调用 finalize() 来确保所有文件都被压缩
   archive.finalize();
 });
 // 更新 COOKIES 环境变量
